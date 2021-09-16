@@ -15,5 +15,6 @@ public class elevator : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         collision.transform.parent = null;
+        DontDestroyOnLoad(collision.gameObject);
     }
 }
